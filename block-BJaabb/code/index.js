@@ -72,12 +72,11 @@ Example:
 */
 
 
-let num1= prompt("Enter num1");
-let num2= prompt("Enter  num2");
-if(num1==num2){
-    alert("True");
+let num1= +prompt("Enter num1");
+let num2= +prompt("Enter  num2");
+if(isNaN(num1) || isNaN(num2)){
+    alert("Enter valid number");
 }
-
 else{
-    alert("false");
+    alert(num1 === num2);
 }
