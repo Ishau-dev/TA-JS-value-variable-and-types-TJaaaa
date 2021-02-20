@@ -173,25 +173,16 @@ if(number1 > number2){
 let numA= +prompt("Enter first number");
 let numB= +prompt("Enter second number");
 let numC= +prompt("Enter Third number");
-alert("1- Addition, 2- subtraction 3- product");
-let ops= +prompt("Enter operation");
-let add= numA + numB + numC;
-let sub= numA - numB - numC;
-let mul= numA * numB * numC;
 
-switch(ops){
-    case 1:
-      alert(add);
-      break;
-    case 2:
-      alert(sub);
-      break;
-    case 3:
-      alert(mul);
-      break;
-    default:
-      alert("try agin")
+
+const mul= numA * numB * numC;
+
+if(mul>0){
+  alert("Product is positive");
+} else {
+  alert("Product is negative");
 }
+
 // /* Calculator
 //  🎖Make a simple calculator with these functions. Using prompt, type conversion, if else statement. Use prompt to take the input from user i.e two numbers and an operation (Add, Sub, Mul, Div).
 
